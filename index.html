@@ -2,22 +2,56 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>CyberEdu Platform</title>
+<title>Technology Simply</title>
 <link rel="stylesheet" href="style.css">
 </head>
+  
 <body>
 
-<header>🚀 منصة أساسيات الأمن السيبراني</header>
-<a href="profile.html" style="float:left; color:white; text-decoration:none;">👤 الملف الشخصي Profile</a>
+<!-- ===== Header ===== -->
+<header class="main-header">
 
+<div class="logo">
+🚀 CyberEdu Platform
+</div>
+
+<div class="menu-toggle" onclick="toggleSidebar()">
+☰
+</div>
+
+</header>
+
+<!-- ===== Sidebar ===== -->
+<div class="sidebar" id="sidebar">
+
+<a href="index.html">🏠 الرئيسية</a>
+<a href="lessons.html">📚 الدروس</a>
+<a href="profile.html">👤 الملف الشخصي</a>
+<a href="#">🏆 الشهادات</a>
+<a href="#">⚙ الإعدادات</a>
+
+</div>
+
+<!-- ===== المحتوى ===== -->
+<div class="main-content">
 
 <div class="container">
 <div class="card">
 <h2>ابدأ رحلتك الآن</h2>
-<p>تعلم أساسيات الشبكات والأمن السيبراني بطريقة تفاعلية مع اختبارات وشهادات.</p>
+<p>
+تعلم أساسيات الشبكات والأمن السيبراني بطريقة تفاعلية.
+</p>
 <a href="lessons.html"><button>عرض الدروس</button></a>
 </div>
 </div>
 
+</div>
+
+<script src="layout.js"></script>
+
 </body>
+
+
+  
+  
 </html>
