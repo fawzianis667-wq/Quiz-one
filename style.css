@@ -145,6 +145,99 @@ footer{
 
 
 
+/* ========================= */
+/* ===== Header ===== */
+/* ========================= */
+
+.main-header{
+height:70px;
+background:linear-gradient(90deg,#0ea5e9,#2563eb);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 20px;
+color:white;
+font-size:18px;
+font-weight:bold;
+position:fixed;
+top:0;
+left:0;
+right:0;
+z-index:1000;
+}
+
+.menu-toggle{
+font-size:26px;
+cursor:pointer;
+}
+
+/* ========================= */
+/* ===== Sidebar ===== */
+/* ========================= */
+
+.sidebar{
+position:fixed;
+top:70px;
+left:-250px;
+width:250px;
+height:100%;
+background:#1e293b;
+padding-top:20px;
+transition:0.3s;
+z-index:999;
+}
+
+.sidebar a{
+display:block;
+padding:15px 20px;
+color:#f1f5f9;
+text-decoration:none;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:#0ea5e9;
+padding-left:30px;
+}
+
+/* عند الفتح */
+.sidebar.active{
+left:0;
+}
+
+/* ========================= */
+/* ===== المحتوى ===== */
+/* ========================= */
+
+.main-content{
+margin-top:90px;
+padding:20px;
+transition:0.3s;
+}
+
+/* عند فتح السايدبار */
+.main-content.shift{
+margin-left:250px;
+}
+
+/* للجوال */
+@media(max-width:768px){
+
+.main-content.shift{
+margin-left:0;
+}
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
