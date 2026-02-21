@@ -1,0 +1,156 @@
+/* ===== إعدادات عامة ===== */
+
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#0f172a;
+    color:#f1f5f9;
+    line-height:1.7;
+}
+
+/* ===== الهيدر ===== */
+
+header{
+    background:linear-gradient(90deg,#0ea5e9,#2563eb);
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ===== الحاوية الرئيسية ===== */
+
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+/* ===== الكروت ===== */
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* ===== العناوين ===== */
+
+h1,h2,h3{
+    margin-top:0;
+    margin-bottom:15px;
+}
+
+/* ===== الأزرار ===== */
+
+button{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:#0ea5e9;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.3s;
+    margin:5px;
+}
+
+button:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+/* ===== شريط التقدم ===== */
+
+.progress{
+    height:12px;
+    background:#334155;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.progress-bar{
+    height:100%;
+    background:#0ea5e9;
+    width:0%;
+    transition:0.5s;
+}
+
+/* ===== توسيط احترافي ===== */
+
+.center{
+    text-align:center;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== الصور ===== */
+
+img{
+    max-width:100%;
+    border-radius:10px;
+}
+
+/* ===== الروابط ===== */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ===== الجداول ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    padding:10px;
+    border-bottom:1px solid #334155;
+    text-align:center;
+}
+
+/* ===== الفوتر ===== */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    color:#94a3b8;
+    font-size:14px;
+    margin-top:40px;
+}
+
+/* ===== استجابة للجوال ===== */
+
+@media(max-width:768px){
+
+.container{
+    padding:20px 15px;
+}
+
+.card{
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+}

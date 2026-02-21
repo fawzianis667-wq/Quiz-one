@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الدروس</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<div class="card">
+<h3>📊 تقدمك في المنصة</h3>
+
+<div class="progress">
+<div class="progress-bar" id="platformProgress"></div>
+</div>
+
+<p id="progressText"></p>
+</div>
+
+<script src="platform.js"></script>
+
+
+
+<script>
+window.onload = function(){
+
+let progress = getProgressPercentage();
+
+document.getElementById("platformProgress").style.width = progress + "%";
+document.getElementById("progressText").innerHTML =
+"أنهيت " + progress + "% من المنهج 🎯";
+
+}
+</script>
+
+
+<script>
+
+window.onload = function(){
+
+// قفل المرحلة 2
+if(localStorage.getItem("lesson1Passed") !== "true"){
+document.getElementById("lesson2").innerHTML =
+"<button disabled style='background:gray;'>🔒 أكمل المرحلة 1 أولًا</button>";
+}
+
+// قفل المرحلة 3
+if(localStorage.getItem("lesson2Passed") !== "true"){
+document.getElementById("lesson3").innerHTML =
+"<button disabled style='background:gray;'>🔒 أكمل المرحلة 2 أولًا</button>";
+}
+
+}
+
+</script>
+
+<body>
+
+<header>📚 قائمة الدروس</header>
+
+<div class="container">
+
+<div class="card">
+<h3>الدرس 1</h3>
+<div id="lesson_1">
+<a href="lesson1.html"><button>قراءة</button></a>
+<a href="quiz1.html"><button>اختبار</button></a>
+</div>
+</div>
+
+<div class="card">
+<h3>الدرس 2</h3>
+<div id="lesson_2">
+<a href="lesson2.html"><button>قراءة</button></a>
+<a href="quiz2.html"><button>اختبار</button></a>
+</div>
+</div>
+
+
+<div class="card">
+<h3>الدرس 3</h3>
+<div id="lesson_3">
+<a href="lesson3.html"><button>قراءة</button></a>
+<a href="quiz3.html"><button>اختبار</button></a>
+</div>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
