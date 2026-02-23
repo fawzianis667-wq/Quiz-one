@@ -331,6 +331,90 @@ margin-left:0;
 
 
 
+/* ===== Navbar Professional ===== */
+
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.nav-logo{
+    font-weight:bold;
+    font-size:18px;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#f1f5f9;
+    font-size:15px;
+    transition:0.3s;
+    position:relative;
+}
+
+.nav-links a:hover{
+    color:#0ea5e9;
+}
+
+/* Active link */
+.nav-links a.active{
+    color:#0ea5e9;
+    font-weight:bold;
+}
+
+/* Menu toggle hidden on desktop */
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    color:white;
+    cursor:pointer;
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:768px){
+
+.nav-links{
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#0f172a;
+    flex-direction:column;
+    width:200px;
+    padding:20px;
+    display:none;
+}
+
+.nav-links.show{
+    display:flex;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+}
+
+
+
+
+
+
+
+
+
 /* ===== استجابة للجوال ===== */
 
 @media(max-width:768px){
