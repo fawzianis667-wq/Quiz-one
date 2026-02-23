@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة الطالب</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>📊 لوحة الطالب</header>
+
+<div class="container">
+<div class="card center">
+
+<h2 id="welcome"></h2>
+
+<p>مرحباً بك في منصتك التعليمية.</p>
+
+<a href="track-beginner.html">
+<button>🎓 متابعة المسار</button>
+</a>
+
+<br><br>
+
+<button onclick="logout()">تسجيل خروج</button>
+
+</div>
+</div>
+
+<script>
+let loggedIn = localStorage.getItem("loggedIn");
+
+if(loggedIn !== "true"){
+    window.location.href = "login.html";
+}
+
+let user = JSON.parse(localStorage.getItem("student"));
+document.getElementById("welcome").innerText = "مرحباً " + user.name;
+
+function logout(){
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
